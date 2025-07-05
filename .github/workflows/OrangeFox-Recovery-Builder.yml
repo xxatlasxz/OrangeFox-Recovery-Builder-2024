@@ -22,15 +22,15 @@ on:
       DEVICE_PATH:
         description: 'Specify your device path.'
         required: true
-        default: 'device/xiaomi/marble'
+        default: 'device/motorola/austin'
       DEVICE_NAME:
         description: 'Specify your Device Codename.'
         required: true
-        default: 'marble'
+        default: 'austin'
       BUILD_TARGET:
         description: 'Specify your Build Target'
         required: true
-        default: 'recovery'
+        default: 'boot'
         type: choice
         options:
         - boot
@@ -39,7 +39,7 @@ on:
       LDCHECK:
         description: 'Path of blobs to check' 
         required: true
-        default: 'system/bin/qseecomd'
+        default: 'recovery/root'
       RECOVERY_TAR:
         description: 'Release recovery.tar For Samsung devices'
         required: false
